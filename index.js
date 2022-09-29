@@ -172,5 +172,72 @@ while (flag == true) {
     }
 
 } */
+// bài giỏ hàng
+/* let bakery = ["chocolate", "marshmallow", "cookies", "chips"];
+let cart = [];
+let index = 0;
+let check;
+let count = 1;
+let buy = true;
+let fname;
+let fcount;
+let nameCake;
+let countCake;
+for (let i = 0; i < bakery.length; i++) {
+    console.log(`${i}. ${bakery[i]}`);
+}
+while (buy) {
+    let nameBakery = prompt("Please input name of bakery");
+    //console.log(cart.length);
+    if (nameBakery === "chocolate" || nameBakery === "marshmallow" || nameBakery === "cookies" || nameBakery === "chips") {
+        if (cart.length === 0) {
+            cart.push(`${nameBakery},${count}`);
+        }
+        else {
+            nameCake = [];
+            countCake = [];
+            check = false;
+            for (let i = 0; i < cart.length; i++) {
+                fname = "";
+                fcount = "";
+                let beginName = cart[i];
+                let checkQoute = true;
+                for (let j = 0; j < beginName.length; j++) {
+                    if (beginName[j] !== "," && checkQoute === true) {
+                        fname = fname + beginName[j];
+                    }
+                    else {
+                        checkQoute = false;
+                        j = j + 1;
+                        fcount = fcount + beginName[j];
+                    }
+                }
+                nameCake.push(fname);
+                countCake.push(Number(fcount));
+            }
+            for (let i = 0; i < nameCake.length; i++) {
+                if (nameBakery === nameCake[i]) {
+                    check = true;
+                    index = i;
+                    break;
+                }
+            }
+            if (check === true) {
+                cart.splice(index, 1, `${nameBakery},${countCake[index] + 1}`);
+            }
+            else {
+                cart.push(`${nameBakery},${count}`);
+            }
+        }
+        let question = prompt("Do you want to buying more? (yes/no)")
+        if (question !== "yes") {
+            buy = false;
+        }
+    }
+    else {
+        console.log("We don't have that item");
+    }
+}
+console.log(cart); */
 //.........................................
 //Bài 56789...không có vấn đề gì.
